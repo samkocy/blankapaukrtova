@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blanka Paukrtová</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&
+      display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container-sm">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="logo" />
+          </a>
+        </div>
+
+        <div class="main-menu">
+          <ul>
+            <li>
+              <a href="index.html">Úvod</a>
+            </li>
+            <li>
+              <a onclick="window.location.href='#services'">Služby</a>
+            </li>
+            <li>
+              <a onclick="window.location.href='#pricing'">Ceník</a>
+            </li>
+            <li>
+              <a onclick="window.location.href='#about'">O mně</a>
+            </li>
+            <li>
+              <a onclick="window.location.href='#contact'" class="btn"
+                ><i class="fas fa-user"></i> Kontakt
+              </a>
+            </li>
+            <li>
+              <a href="english.html">
+                <svg
+                  width="35"
+                  height="21"
+                  viewBox="0 0 60 30"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <clipPath id="t">
+                    <path d="M0 0v30h60V0z" />
+                  </clipPath>
+                  <clipPath id="s">
+                    <path d="M30 15H0V0h60v30H0z" clip-path="url(#t)" />
+                  </clipPath>
+                  <path d="M0 0v30h60V0z" fill="#012169" />
+                  <path
+                    d="M0 0l60 30m0-30L0 30"
+                    stroke="#fff"
+                    stroke-width="6"
+                  />
+                  <path
+                    d="M0 0l60 30m0-30L0 30"
+                    clip-path="url(#s)"
+                    stroke="#C8102E"
+                    stroke-width="4"
+                  />
+                  <path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10" />
+                  <path
+                    d="M30 0v30M0 15h60"
+                    stroke="#C8102E"
+                    stroke-width="6"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Introduction -->
+    <section class="introduction">
+      <div class="container">
+        <div class="container-sm">
+          <div class="introduction-content">
+            <h1 class="introduction-heading text-xxl">Text na úvod</h1>
+            <p class="introduction-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium similique nulla, sequi ipsum repellendus molestias
+              adipisci iusto et saepe id deserunt labore quam consectetur.
+              Repudiandae porro et aliquid hic accusantium.
+            </p>
+            <div class="introduction-buttons">
+              <a
+                onclick="window.location.href='#services'"
+                class="btn btn-primary"
+                id="btn"
+                >Služby</a
+              >
+              <a onclick="window.location.href='#pricing'" class="btn"
+                ><i class="fas fa-laptop"></i>Ceník</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="container-sm">
+          <div class="services-content">
+            <h2 class="services-heading text-xl">Služby</h2>
+            <p class="services-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
+              maxime saepe facilis necessitatibus qui repellendus sequi in eos
+              eaque id blanditiis ad autem ullam, nisi unde mollitia ratione,
+              delectus dolore.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="container-sm">
+          <div class="pricing-content">
+            <h2 class="pricing-heading text-xl">Ceník</h2>
+            <p class="pricing-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
+              maxime saepe facilis necessitatibus qui repellendus sequi in eos
+              eaque id blanditiis ad autem ullam, nisi unde mollitia ratione,
+              delectus dolore.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About me -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="container-sm">
+          <div class="about-content">
+            <h2 class="about-heading text-xl">O mně</h2>
+            <p class="about-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
+              maxime saepe facilis necessitatibus qui repellendus sequi in eos
+              eaque id blanditiis ad autem ullam, nisi unde mollitia ratione,
+              delectus dolore.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-black" id="contact">
+      <div class="container" id="container-footer">
+        <div class="footer-grid">
+          <h2 class="footer-heading text-xl">Kontakt</h2>
+          <p class="footer-text"></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

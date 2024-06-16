@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #4891ff;
+  --light-color: #f4f4f6;
+  --dark-color: #111;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background: white;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+.logo img {
+  max-width: 100%;
+  height: 50px;
+  cursor: pointer;
+}
+
+/* Navbar */
+.navbar {
+  background: white;
+  padding: 20px;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  border-bottom: solid black 1px;
+}
+
+.navbar .container-sm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .main-menu ul {
+  display: flex;
+}
+
+.navbar ul li a {
+  padding: 10px 20px;
+  display: block;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.navbar ul li a:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.navbar ul li a i {
+  margin-right: 10px;
+}
+
+.navbar ul li:last-child a {
+  margin-left: 10px;
+}
+
+/* Introduction */
+.introduction {
+  margin-bottom: 50px;
+}
+
+.introduction .container {
+  background: url("../images/introduction.png") no-repeat;
+  background-size: cover;
+  background-position: right;
+  position: relative;
+  height: 80vh;
+  margin-bottom: 2%;
+  inset: 0;
+}
+
+.introduction .introduction-content {
+  width: 40%;
+  margin: 13% 2%;
+  position: absolute;
+}
+
+.introduction-text {
+  margin-bottom: 20px;
+}
+
+.services,
+.pricing,
+.about {
+  text-align: center;
+}
+.services-content,
+.pricing-content,
+.about-content {
+  padding: 40% 15%;
+}
+.about {
+  margin-bottom: 0;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  color: white;
+  background-color: var(--primary-color);
+  padding: 10px;
+  border-bottom: none;
+}
+.footer-heading {
+  margin-top: 0;
+}
+#container-footer {
+  border-bottom: none;
+}
+.footer-text {
+  padding-bottom: 30px;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  border-bottom: solid black 1px;
+}
+
+.container-sm {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 13px 20px;
+  background: var(--light-color);
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#btn {
+  margin-right: 10px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: white;
+}
+
+.btn-dark {
+  background: var(--dark-color);
+  color: white;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+/* Text Classes */
+.text-xxl {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin: 40px 0 20px;
+}
+
+.text-xl {
+  font-size: 2.2rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 40px 0 20px;
+}
+
+.text-lg {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 30px 0 20px;
+}
+
+.text-md {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 20px 0 10px;
+}
+
+.text-sm {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 10px 0 5px;
+}
+
+.text-center {
+  text-align: center;
+}
